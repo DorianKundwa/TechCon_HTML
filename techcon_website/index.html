@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCon 2024 | Home</title>
+  <meta name="description" content="TechCon 2024 — The premier conference for technology leaders, builders, and innovators.">
+</head>
+<body>
+  <header>
+    <h1>TechCon 2024</h1>
+    <nav aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Welcome to TechCon 2024</h2>
+      <p>
+        Join engineers, creators, and decision-makers from around the world for three days of keynotes,
+        hands-on sessions, and networking. Discover emerging trends in AI, cloud, security, and developer
+        experience, and connect with the community shaping what comes next.
+      </p>
+
+      <figure>
+        <video controls width="100%" poster="media/promo_poster.jpg">
+          <source src="media/techcon_promo.mp4" type="video/mp4">
+          <track kind="captions" src="media/promo_captions.vtt" srclang="en" label="English captions">
+          Your browser does not support the video tag. You can
+          <a href="media/techcon_promo.mp4">download the promotional video</a> instead.
+        </video>
+        <figcaption>TechCon 2024 — Highlights and what to expect.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> TechCon. All rights reserved. <strong>copyright</strong></p>
+    <script>
+      // Set current year for copyright
+      (function setYear(){
+        var yearElement = document.getElementById('year');
+        if (yearElement) {
+          yearElement.textContent = new Date().getFullYear();
+        }
+      })();
+    </script>
+  </footer>
+</body>
+</html>
+
+
