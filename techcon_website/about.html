@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About TechCon 2024</title>
+  <meta name="description" content="Learn about TechCon 2024 — history, mission, and notable past speakers.">
+</head>
+<body>
+  <header>
+    <h1>About TechCon 2024</h1>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Our History</h2>
+      <p>
+        Since its inception, TechCon has brought together technologists, entrepreneurs, and researchers to share
+        breakthroughs and best practices. What started as a small community meetup has grown into a global
+        gathering that spans multiple tracks and hands-on labs.
+      </p>
+      <figure>
+        <img src="media/history_early_days.jpg" alt="Early TechCon meetup with attendees collaborating">
+        <figcaption>The early days of TechCon — small, focused, and full of energy.</figcaption>
+      </figure>
+      <figure>
+        <img src="media/history_expansion.jpg" alt="Large conference hall during TechCon expansion years">
+        <figcaption>TechCon expands — more tracks, bigger venues, deeper content.</figcaption>
+      </figure>
+    </article>
+
+    <article>
+      <h2>Our Mission</h2>
+      <p>
+        TechCon exists to accelerate learning, foster inclusive communities, and turn ideas into impact. We aim to
+        provide practical content for builders and strategic insights for leaders, with accessibility and global
+        participation at the core of our program.
+      </p>
+      <figure>
+        <img src="media/mission_collaboration.jpg" alt="Developers collaborating at workshop tables">
+        <figcaption>Collaboration and learning are at the heart of TechCon.</figcaption>
+      </figure>
+    </article>
+
+    <article>
+      <h2>Past Speakers</h2>
+      <p>Highlights from recent years include leaders and innovators across AI, cloud, and security.</p>
+      <section>
+        <img src="media/speakers_alex_chen.jpg" alt="Portrait of Alex Chen, AI researcher">
+        <h3>Alex Chen</h3>
+        <p>AI researcher known for work on efficient transformer architectures and responsible AI practices.</p>
+      </section>
+      <section>
+        <img src="media/speakers_samara_diaz.jpg" alt="Portrait of Samara Diaz, cloud architect">
+        <h3>Samara Diaz</h3>
+        <p>Cloud architect who pioneered multi-cloud resilience patterns adopted by global organizations.</p>
+      </section>
+      <section>
+        <img src="media/speakers_raj_patel.jpg" alt="Portrait of Raj Patel, security engineer">
+        <h3>Raj Patel</h3>
+        <p>Security engineer advocating for usable security, with contributions to open-source tooling.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> TechCon. All rights reserved. <strong>copyright</strong></p>
+    <script>
+      (function setYear(){
+        var yearElement = document.getElementById('year');
+        if (yearElement) {
+          yearElement.textContent = new Date().getFullYear();
+        }
+      })();
+    </script>
+  </footer>
+</body>
+</html>
+
+
